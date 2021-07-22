@@ -36,3 +36,9 @@ Run `npm run cypress:open` to execute the end-to-end tests via [Cypress]. Then g
 6. ng-bootstrap component library is used for styling, fonts and UI components.
 7. Karma and Jasmine, are used for Unit testing
 8. Cypress is used for e2e testing
+
+## Also, here are some improvements that I feel can be done to the code are:
+
+1. Feature and Common UI Modules under the Root Module,
+    to promote lazy loading and make the app more scalable and optimized.
+2. Add accessibility in the project.

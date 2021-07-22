@@ -1,9 +1,9 @@
-<form #archiveSearch="ngForm" (ngSubmit)="onSubmit(archiveSearch)">
+<form #archiveSearch="ngForm" class="player-search-form" (ngSubmit)="onSubmit(archiveSearch)">
     <input
         class="player-input-box"
         type="text"
         placeholder="Enter Player ID"
         required
         [(ngModel)]="playerId" name="playerId" />
-    <button type="submit" class="submit-button">Go</button>
+    <button type="submit" class="submit-button btn-primary">Go</button>
 </form>

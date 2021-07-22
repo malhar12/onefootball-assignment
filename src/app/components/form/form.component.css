@@ -1,0 +1,11 @@
+.player-search-form{
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    gap: 1em;
+}
+
+.player-search-form .submit-button.btn-primary{
+    width: 50px;
+    border-radius: 4px;
+}

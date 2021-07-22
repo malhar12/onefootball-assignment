@@ -1,19 +1,33 @@
-<h1>Player Archive</h1>
-
-<section class="search-form">
-  <pa-form (onPlayerDetails)="displayPlayerDetails($event)"></pa-form>
-  <section *ngIf="activePlayerDetails.status; else messageTemplate" class="player-details">
-    <h2>Player Details</h2>
-    <ul class="player-details-list">
-      <li>Id: {{activePlayerDetails.details?.id}}</li>
-      <li>Active: true</li>
-      <li>Age: {{activePlayerDetails.details?.profile?.age}}</li>
-      <li>Role: {{activePlayerDetails.details?.profile?.role}}</li>
-      <li>Team: {{activePlayerDetails.details?.profile?.team}}</li>
-    </ul>
+<main class="player-section-contianer">
+  <h1 class="app-title">Player Archive</h1>
+  
+  <section class="search-form">
+    <label class="form-label">Player Search:</label>
+    <pa-form (onPlayerDetails)="displayPlayerDetails($event)"></pa-form>
+    <section *ngIf="activePlayerDetails.status; else messageTemplate" class="player-details">
+      <h4>Player Details</h4>
+      <div class="player-info-container">
+        <div class="player-stats">
+          <ul class="player-details-list">
+            <li>Id: {{activePlayerDetails.details?.id}}</li>
+            <li>Active: true</li>
+            <li>Age: {{activePlayerDetails.details?.profile?.age}}</li>
+            <li>Role: {{activePlayerDetails.details?.profile?.role}}</li>
+            <li>Team: {{activePlayerDetails.details?.profile?.team}}</li>
+          </ul>
+        </div>
+        <div class="player-image">
+          <img [src]="activePlayerDetails.details?.profile?.picture" alt="player image" />
+        </div>
+      </div>
+      <div class="player-stats-container">
+        <h4>Player Stats</h4>
+        
+      </div>
+    </section>
   </section>
-</section>
-
-<ng-template #messageTemplate>
-  <span class="error-message">{{activePlayerDetails.message}}</span>
-</ng-template>
+  
+  <ng-template #messageTemplate>
+    <span class="error-message">{{activePlayerDetails.message}}</span>
+  </ng-template>
+</main>

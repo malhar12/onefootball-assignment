@@ -1,0 +1,27 @@
+.app-title{
+    margin-bottom: 50px;
+}
+
+.player-section-contianer{
+    width: 350px;
+}
+
+.search-form .form-label{
+    font-size: 20px;
+}
+
+.search-form .player-details, .search-form .player-details h4{
+    margin-top: 50px;
+    margin-bottom: 25px;
+}
+
+.search-form .player-details .player-info-container{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.search-form .player-details .player-info-container .player-details-list{
+    list-style: none;
+    padding-left: 0;
+}

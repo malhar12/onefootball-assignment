@@ -13,7 +13,7 @@ context('Player Search Journey', () => {
         cy.get('.search-form').should('have.descendants', '.player-details');
     });
 
-    it('should show that the player is not active, if the player is not active', () => {
+    it('should show that the player is not active message, if the player is not active', () => {
         cy.get('.player-input-box')
             .type('giorgio').should('have.value', 'giorgio');
         cy.get('.submit-button')

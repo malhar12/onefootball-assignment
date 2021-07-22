@@ -6,6 +6,10 @@ This project was generated with [Angular CLI](https://github.com/angular/angular
 
 Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The app will automatically reload if you change any of the source files.
 
+## PreRequisites to ru nthe project
+
+Node version v14.16.0 (npm v6.14.11) minimum
+
 ## Code scaffolding
 
 Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
@@ -20,8 +24,15 @@ Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.
 
 ## Running end-to-end tests
 
-Run `ng e2e` to execute the end-to-end tests via [Protractor](http://www.protractortest.org/).
+Run `npm run cypress:open` to execute the end-to-end tests via [Cypress]. Then go to integrations folder and run the `player-search-journey.spec.ts`.
 
-## Further help
+## Architecture Choices
 
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI Overview and Command Reference](https://angular.io/cli) page.
+1. Framework Used: Angular built with Angular CLI version 11.0.3
+2. The architecture of the app is kept pretty simple. Currently, there is only Root Module, which has all the components. This was done in order to keep the app simple, due to it's simple UX and requirements.
+3. Ofcourse, we can further scale the archuitecture, by having different feature and common components module under the root module.
+4. There seemed no requirement for routing, so routing is not included in the project.
+5. For styling, CSS is used.
+6. ng-bootstrap component library is used for styling, fonts and UI components.
+7. Karma and Jasmine, are used for Unit testing
+8. Cypress is used for e2e testing

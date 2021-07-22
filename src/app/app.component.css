@@ -4,6 +4,18 @@
 
 .player-section-contianer{
     width: 350px;
+    padding: 20px;
+    border: 1px solid #000;
+    box-shadow: 5px 5px 5px #cecece;
+    border-radius: 4px;
+}
+
+.search-form .player-details .container {
+    display: flex;
+    flex-direction: column;
+    gap: 2em;
+    flex: 1 1 0;
+    padding: 0;
 }
 
 .search-form .form-label{
@@ -18,10 +30,44 @@
 .search-form .player-details .player-info-container{
     display: flex;
     flex-direction: row;
-    justify-content: space-between;
+    justify-content: flex-start;
+    gap: 3em;
+    min-width: 30%;
 }
 
 .search-form .player-details .player-info-container .player-details-list{
     list-style: none;
     padding-left: 0;
+}
+
+.player-stats-container .player-stats-list{
+    list-style: none;
+    padding-left: 0;
+    display: flex;
+    justify-content: flex-start;
+    flex-wrap: wrap;
+    gap: 1em;
+}
+
+.error-message{
+    margin: 15px 0;
+    display: block;
+    font-size: 16px;
+    font-weight: 600;
+    color: #e42b2b;
+}
+
+.stat-highlighter{
+    font-weight: 800;
+    font-size: 14px;
+    text-transform: capitalize;
+}
+
+
+.stat-token{
+    padding: 5px;
+    background-color: #2d2d22;
+    font-size: 14px;
+    border-radius: 4px;
+    color: #fff;
 }

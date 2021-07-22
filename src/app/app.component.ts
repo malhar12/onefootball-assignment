@@ -21,8 +21,5 @@ export class AppComponent {
 
   displayPlayerDetails(event: FormEventDetails): void {
     this.activePlayerDetails = event;
-
-    if(this.activePlayerDetails.details && this.activePlayerDetails.details.stats)
-      this.activePlayerStatKeys = Object.keys(this.activePlayerDetails.details?.stats);
   }
 }

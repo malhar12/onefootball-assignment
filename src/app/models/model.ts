@@ -48,7 +48,7 @@ export interface PlayerStats {
 export interface PlayerDetails {
     id: string;
     profile: PlayerProfile;
-    stats: PlayerStats
+    stats?: PlayerStats
 }
 
 export interface FormEventDetails {
